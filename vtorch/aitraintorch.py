@@ -7,7 +7,7 @@ from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("DeepPavlov/rubert-base-cased")
 bert_model = AutoModel.from_pretrained("DeepPavlov/rubert-base-cased")
 
-with open('QA.json', 'r') as file:
+with open('../QA.json', 'r') as file:
     data = json.load(file)
 questions=data['questions']
 answers=data['answers']

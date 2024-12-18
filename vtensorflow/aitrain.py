@@ -15,7 +15,7 @@ print("Loading bert")
 bert_preprocess_model=hub.KerasLayer(bpre)
 bert_model = hub.KerasLayer(bert)
 
-with open('QA.json', 'r') as file:
+with open('../QA.json', 'r') as file:
     data = json.load(file)
 questions=data['questions']
 answers=data['answers']

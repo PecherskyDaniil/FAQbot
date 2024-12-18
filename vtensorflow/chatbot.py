@@ -10,7 +10,7 @@ import json
 tf.get_logger().setLevel('ERROR')
 
 
-with open('QA.json', 'r') as file:
+with open('../QA.json', 'r') as file:
     data = json.load(file)
 questions=data['questions']
 answers=data['answers']
