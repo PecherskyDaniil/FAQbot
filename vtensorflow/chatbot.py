@@ -38,15 +38,15 @@ def show_message():
     
 root = Tk()
 root.title("Чат бот")
-root.geometry("250x200") 
+root.geometry("500x500") 
  
-entry = ttk.Entry()
-entry.pack(anchor=NW, padx=6, pady=6)
+entry = ttk.Entry(width=400)
+entry.pack(anchor=NW, padx=50, pady=50)
   
 btn = ttk.Button(text="Задать вопрос", command=show_message)
-btn.pack(anchor=NW, padx=6, pady=6)
+btn.pack(anchor=NW, padx=50, pady=50)
  
 label = ttk.Label()
-label.pack(anchor=NW, padx=6, pady=6)
+label.pack(anchor=NW, padx=50, pady=50)
   
 root.mainloop()
