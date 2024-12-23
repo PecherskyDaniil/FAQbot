@@ -4,8 +4,8 @@ import tensorflow as tf
 import numpy as np
 from transformers import AutoTokenizer, AutoModel
 
-tokenizer = AutoTokenizer.from_pretrained("DeepPavlov/rubert-base-cased")
-bert_model = AutoModel.from_pretrained("DeepPavlov/rubert-base-cased")
+tokenizer = AutoTokenizer.from_pretrained("../rubert-base-cased",local_files_only=True)
+bert_model = AutoModel.from_pretrained("../rubert-base-cased",local_files_only=True)
 
 with open('../QA.json', 'r') as file:
     data = json.load(file)

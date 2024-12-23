@@ -11,8 +11,8 @@ from transformers import AutoTokenizer, AutoModel
 loaded_model = tf.keras.models.load_model("torch_model.keras")
 dataset=np.load("torch_dataset.npy")
 
-tokenizer = AutoTokenizer.from_pretrained("DeepPavlov/rubert-base-cased")
-bert_model = AutoModel.from_pretrained("DeepPavlov/rubert-base-cased")
+tokenizer = AutoTokenizer.from_pretrained("../rubert-base-cased",local_files_only=True)
+bert_model = AutoModel.from_pretrained("../rubert-base-cased",local_files_only=True)
 
 with open('../QA.json', 'r') as file:
     data = json.load(file)
