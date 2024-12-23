@@ -1,0 +1,3 @@
+[submodule "rubert-base-cased"]
+	path = rubert-base-cased
+	url = https://huggingface.co/DeepPavlov/rubert-base-cased
